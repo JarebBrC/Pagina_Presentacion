@@ -1,0 +1,329 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "logo contacto"
+    "trabajo mapa";
+  gap: 2rem;
+  background-color: var(--gris);
+  padding: 4rem;
+  font-family: var(--font-primary);
+  min-height: 85rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 10rem;
+  top: -9rem;
+}
+
+.logoImg,
+.titulo {
+  width: 7rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  position: relative;
+  top: 0rem;
+  margin-right: 0rem;
+}
+
+.contacto {
+  position: relative;
+  top: -2rem;
+  right: 36rem;
+  width: fit-content;
+  margin: 0;
+  padding: 0rem;
+}
+
+.recuadroImg {
+  width: 22rem;
+}
+
+.contactoTitulo {
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  color: var(--negro);
+  font-size: var(--font-bold-20);
+  color: var(--gris);
+}
+
+.trabajemos {
+  position: relative;
+  grid-area: trabajo;
+  max-width: 32rem;
+  right: 1.5rem;
+  top: -13rem;
+}
+
+.tituloTrabajemosJuntos {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.textoTrabajemos {
+  text-align: justify;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  color: var(--negro);
+}
+
+.mapa {
+  grid-area: mapa;
+  position: relative;
+  top: 5rem;
+  right: 32.5rem;
+}
+
+.mapa iframe {
+  border: 0.15rem solid black;
+  border-radius: 1.5rem;
+  width: 30rem;
+  height: 110%;
+}
+
+.datosContacto {
+  flex-direction: column;
+  position: relative;
+  gap: 2rem;
+  color: var(--naranja);
+  top: 10rem;
+}
+
+.contactoItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.contactoItem img {
+  width: 30px;
+  height: auto;
+}
+
+.numeroTelefono h1,
+.textoUbicacion h1,
+.textoCorreo h1 {
+  font-size: 16px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    min-height: 95rem;
+  }
+
+  .logo-container {
+    top: 35rem;
+    margin-right: -19rem;
+  }
+
+  .logoImg,
+  .titulo {
+    width: 20rem;
+    left: 20rem;
+  }
+
+  .logoImg {
+    margin-left: 39rem;
+  }
+
+  .contacto {
+    position: relative;
+    top: -1rem;
+    left: -81rem;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .recuadroImg {
+    width: 26rem;
+  }
+
+  .contactoTitulo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--negro);
+    font-size: 2.5rem;
+    color: var(--gris);
+  }
+
+  .trabajemos {
+    position: relative;
+    min-width: 75rem;
+    right: 1rem;
+    margin-top: -8rem;
+  }
+
+  .tituloTrabajemosJuntos {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 25rem;
+    margin-top: -5rem;
+    grid-area: none;
+  }
+
+  .textoTrabajemos {
+    text-align: center;
+    margin-left: -22rem;
+    font-size: 2.5rem;
+    min-width: 90rem;
+  }
+
+  .mapa {
+    top: 2rem;
+    right: 70rem;
+  }
+
+  .mapa iframe {
+    border: 0.2rem solid black;
+    width: 45rem;
+    height: 30rem;
+  }
+
+  .datosContacto {
+    margin-top: -13rem;
+  }
+
+  .numeroTelefono h1,
+  .textoUbicacion h1,
+  .textoCorreo h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .trabajemos {
+    min-width: 18 0rem;
+    margin-left: 5rem;
+  }
+
+  .tituloTrabajemosJuntos {
+    font-size: var(--font-bold-40);
+  }
+
+  .textoTrabajemos {
+    font-size: 3.5rem;
+  }
+
+  .contacto {
+    right: 131rem;
+  }
+
+  .recuadroImg {
+    width: 28rem;
+  }
+
+  .logo-container {
+    top: 70rem;
+    padding-left: 0rem;
+    margin-left: -70rem;
+  }
+
+  .logoImg,
+  .titulo {
+    width: 30rem;
+    left: 10rem;
+  }
+
+  .mapa {
+    top: 28rem;
+    right: 10rem;
+  }
+
+  .mapa iframe {
+    width: 55rem;
+    height: 45rem;
+  }
+
+  .datosContacto {
+    padding-top: 35rem;
+    padding-left: 10rem;
+  }
+
+  .numeroTelefono h1,
+  .textoUbicacion h1,
+  .textoCorreo h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contact {
+    min-height: 150rem;
+  }
+
+  .recuadroImg {
+    margin-left: -20rem;
+    width: 50rem;
+    height: 20%;
+  }
+
+  .contactoTitulo {
+    left: -7rem;
+    font-size: 3rem;
+  }
+
+  .tituloTrabajemosJuntos {
+    margin-top: -20rem;
+    margin-left: 69rem;
+    display: flex;
+    text-align: center;
+  }
+
+  .textoTrabajemos {
+    margin-top: 15rem;
+    margin-left: -90rem;
+    min-width: 150rem;
+  }
+
+  .logo-container {
+    top: 55rem;
+  }
+
+  .logoImg {
+    margin-right: 20rem;
+  }
+
+  .logoImg,
+  .titulo {
+    width: 40rem;
+  }
+
+  .mapa {
+    top: -6rem;
+    margin-top: 5rem;
+    left: 10rem;
+  }
+
+  .mapa iframe {
+    width: 65rem;
+    height: 55rem;
+  }
+
+  .datosContacto {
+    top: -30rem;
+    left: 10rem;
+  }
+}

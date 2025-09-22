@@ -1,0 +1,393 @@
+:root {
+  font-family: var(--font-primary);
+}
+
+.ourProyects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--azulFondos);
+  min-height: 65rem;
+  overflow-x: hidden;
+  padding: -1rem;
+  font-family: var(--font-primary);
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.carousel-images {
+  border-radius: 2rem;
+  width: 190%;
+  height: 30rem;
+  overflow: hidden;
+  margin-top:10.5rem;
+}
+
+.carousel-images img,
+.animated-image {
+  position: static;
+  width: 100%;
+  height: 70%;
+  border-radius: 2.5rem;
+  object-fit: contain;
+  display: block;
+}
+
+.animated-image {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 70rem;
+  transform: translateY(-50%);
+  background-color: var(--blanco);
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.left:hover,
+.right:hover {
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+
+.left:hover svg,
+.right:hover svg {
+  stroke: var(--blanco);
+}
+
+.left {
+  left: 3%;
+  top: 65rem;
+}
+
+.right {
+  right: 3%;
+  top: 65rem;
+}
+
+.carousel-indicator {
+  margin-top: -7.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  background-color: var(--vector1);
+  width: 7rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  opacity: 1;
+}
+
+.dot.active {
+  background-color: var(--blanco);
+  margin-top: -0.3rem;
+  width: 7.5rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.tituloConvocatorias {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: var(--blanco);
+  height: 10rem;
+  top: 15rem;
+  left: 6.5rem;
+  font-size: 2rem;
+}
+
+.ourProyects__Title {
+  position: absolute;
+  margin-top: -1rem;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  color: var(--gris);
+}
+
+.img__Rectangle-img {
+  width: 90%;
+  height: 4rem;
+  position: relative;
+  display: inline-block;
+  margin-right: 0rem;
+  top: 3rem;
+}
+
+.textProyect {
+  display: block;
+  color: var(--gris);
+  text-align: justify;
+  padding: 15% 6%;
+  font-size: 2rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.containerImgProyects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cursoLengua,
+.donacionAuxiliar,
+.alfabetizacion,
+.habilidadesPracticas {
+  flex: 1 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursoLengua img,
+.donacionAuxiliar img,
+.alfabetizacion img,
+.habilidadesPracticas img {
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  .ourProyects-header {
+    font-size: 1rem;
+    text-align: absolute;
+    padding-bottom: 2rem;
+    min-height: 155rem;
+  }
+
+  .carousel-wrapper {
+    gap: 1rem;
+  }
+
+  .carousel-controls {
+    gap: 1.5rem;
+  }
+
+  .carousel {
+    max-width: 65rem;
+    padding: 2rem 0;
+
+  }
+
+  .carousel-images {
+    height: 50rem;
+    margin-top: 37rem;
+  }
+
+  .carousel-images img,
+  .animated-image {
+    object-fit: cover;
+  }
+
+  .left,
+  .right {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .left {
+    left: 12%;
+    top: 142rem;
+  }
+
+  .right {
+    right: 12%;
+    top: 142rem;
+  }
+
+  .carousel-indicator {
+    gap: 15px;
+    margin-top: -10rem;
+  }
+
+  .dot {
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+  }
+
+  .dot.active {
+    width: 13rem;
+    height: 3rem;
+  }
+
+  .tituloConvocatorias  {
+    top: 35rem;
+    left: 29rem;
+    font-size: var(--font-bold-40);
+  }
+
+  .ourProyects__Title {
+    margin-top: 3rem;
+    margin-left: 10%;
+    font-size: var(--font-bold-20);
+  }
+
+  .img__Rectangle-img {
+    margin-right: 40rem;
+    top: 8rem;
+  }
+
+  .textProyect {
+    font-size: var(--font-bold-40);
+  }
+
+  .cursoLengua,
+  .donacionAuxiliar,
+  .alfabetizacion,
+  .habilidadesPracticas {
+    flex: 0 0 48%;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 1300px) {
+  .ourProyects {
+    min-height: 44.5rem;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .ourProyects-header {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .carousel-wrapper {
+    gap: 10px;
+  }
+
+  .carousel-controls {
+    gap: 15px;
+  }
+
+  .carousel {
+    max-width: 350px;
+    padding: 20px 0;
+  }
+
+  .carousel-images {
+    height: 80rem;
+  }
+
+  .carousel-images img,
+  .animated-image {
+    object-fit: cover;
+  }
+
+  .left,
+  .right {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .left {
+    left: 25rem;
+    margin-top: 35rem;
+  }
+
+  .right {
+    right: 25rem;
+    margin-top: 35rem;
+  }
+
+  .carousel-indicator {
+    gap: 2rem;
+    margin-top: -20rem;
+  }
+
+  .dot {
+    width: 9rem;
+    height: 2rem;
+    border-radius: 50rem;
+
+  }
+
+  .dot.active {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+  .tituloConvocatorias {
+    margin-top: -8rem;
+    left: 70rem;
+    font-size: var(--font-bold-40);
+  }
+
+  .img__Rectangle-img {
+    width: 55%;
+    height: 10rem;
+    right: 1rem;
+    top: 10rem;
+  }
+
+  .ourProyects__Title {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    font-size: var(--font-light-35);
+  }
+
+  .cursoLengua,
+  .donacionAuxiliar,
+  .alfabetizacion,
+  .habilidadesPracticas {
+    flex: 0 0 calc(23%);
+    /* 4 por fila en escritorio */
+  }
+
+  .cursoLengua img,
+  .donacionAuxiliar img,
+  .alfabetizacion img,
+  .habilidadesPracticas img {
+    min-width: 350px;
+    /* Las imágenes se ven grandes pero controladas */
+  }
+.containerImgProyects{
+  margin-top:-20rem;
+}
+}

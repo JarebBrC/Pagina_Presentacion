@@ -1,0 +1,297 @@
+@import url('../../App.css');
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--azulFondos);
+  min-height: 28rem;
+  overflow-x: hidden;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  z-index: 10;
+  background-image: url("../../assets/ImgBanner/Ellipse-4.webp");
+  background-size: cover;
+  background-position: -1rem -10rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.banner__text {
+  flex: 1;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--blanco);
+  text-align: left;
+  font-size: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner__buttons {
+  position: absolute;
+  top: 17rem;
+  right: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.proyect__button,
+.dictionary__button {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  width: 13rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.proyect__button {
+  background-color: var(--buttonAmarillo);
+  color: black;
+}
+
+.dictionary__button {
+  background-color: var(--buttonMorado);
+  color: var(--blanco);
+}
+
+.img__child,
+.img__avalados,
+.img__estado,
+.img__junta {
+  position: absolute;
+  flex-shrink: 0;
+  display: block;
+  align-self: flex-start;
+  margin: auto;
+}
+
+.img__child {
+  display: flex;
+  width: 50rem;
+  justify-content: flex-end;
+  margin-top: 5rem;
+  right: 1.5rem;
+}
+
+.img__child-img,
+.img__avalados-img,
+.img__estado-img,
+.img__junta-img {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.img__child-img {
+  max-height: 15rem;
+  max-width: 80rem;
+}
+
+.img__avalados {
+  margin-top: 1rem;
+  right: 9.5rem;
+}
+
+.img__avalados-img {
+  max-height: 0.8rem;
+}
+
+.img__estado {
+  margin-top: 3.5rem;
+  right: 7rem;
+}
+
+.img__estado-img {
+  max-height: 6rem;
+}
+
+.img__junta {
+  margin-top: 4rem;
+  right: 20rem;
+}
+
+.img__junta-img {
+  max-height: 5rem;
+}
+
+@media (min-width: 600px) {
+  .banner {
+    min-height: 70rem;
+  }
+
+  .banner__text {
+    font-size: var(--font-bold-40);
+    padding: 1rem 0 0 1rem;
+  }
+
+  .img__child {
+    margin-top: 15rem;
+    margin-left: -1rem;
+    right: 0rem;
+    top: -2rem;
+  }
+
+  .img__child-img {
+    max-height: 32rem;
+  }
+
+  .banner__buttons {
+    top: 45rem;
+    right: 47%;
+    gap: 1.5rem;
+  }
+
+  .proyect__button,
+  .dictionary__button {
+    width: 20rem;
+    height: 6rem;
+    font-size: var(--font-bold-20);
+  }
+
+  .proyect__button {
+    border-radius: 1.2rem;
+  }
+
+  .dictionary__button {
+    border-radius: 0.6rem;
+  }
+
+  .img__avalados {
+    margin-top: 7rem;
+    left: 30rem;
+  }
+
+  .img__avalados-img {
+    max-height: 2rem;
+  }
+
+  .img__estado {
+    margin-top: 14rem;
+    right: 20rem;
+  }
+
+  .img__estado-img {
+    max-height: 14.5rem;
+  }
+
+  .img__junta {
+    margin-top: 15rem;
+    right: 55%;
+  }
+
+  .img__junta-img {
+    max-height: 13rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .banner {
+    flex-direction: row;
+    min-height: 80rem;
+    background-image: url("../../assets/ImgBanner/Circle.webp");
+    background-size: 80%;
+    background-position: -30rem -50rem;
+  }
+
+  .banner__left {
+    width: 50%;
+  }
+
+  .banner__text {
+    font-size: var(--font-bold-40);
+    padding-top: 7rem;
+    padding-left: 1rem;
+    gap: var(--espaciado-texto);
+  }
+
+  .img__child {
+    width: 40%;
+    height: 68rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    top: -5rem;
+  }
+
+  .img__child-img {
+    max-height: 100rem;
+  }
+
+  .banner__buttons {
+    top: 55rem;
+    right: 93rem;
+    flex-direction: row;
+  }
+
+  .img__avalados {
+    margin-top: 0rem;
+    margin-left: 13%;
+  }
+
+  .img__avalados-img {
+    max-height: 15rem;
+  }
+
+  .img__estado {
+    margin-top: 8rem;
+    right: 23%;
+  }
+
+  .img__estado-img {
+    max-height: 100rem;
+  }
+
+  .img__junta {
+    margin-top: 9rem;
+    right: 60%;
+  }
+
+  .img__junta-img {
+    max-height: 100rem;
+  }
+}
+
+@media (min-width: 1500px) {
+
+  .banner {
+    min-height: 95rem;
+  }
+
+  .img__avalados{
+    left: 38rem;
+  }
+  .img__estado{
+    right: 60rem;
+  }
+  .img__child {
+    top: -5rem;
+  }
+  .img__child-img {
+    min-height: 75rem;
+  }
+  .banner__text {
+    font-size: 6rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    white-space: normal;
+    width: 180%;
+  }
+
+  .banner__buttons {
+    top: 75rem;
+    right: 135rem;
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  /* Tipografías */
+  --font-primary: 'Montserrat', sans-serif;
+
+  --font-bold-65: 6.5rem;
+  --font-bold-40: 4rem;
+  --font-bold-20: 2rem;
+  --font-regular-25: 2.5rem;
+  --font-light-35: 3.5rem;
+  --font-light-10: 1rem;
+
+  /* Espaciado */
+  --espaciado-texto: 3rem;
+
+  /* Colores */
+  --gris: #f6f7fbff;
+  --naranja: #FF8850;
+  --buttonAmarillo: #FFDF0FFF;
+  --buttonMorado: #8D5CF6;
+  --azulFondos: #26335D;
+  --negro: #12161980;
+  --blanco: #FFFFFF;
+  --vector1: #FB923C;
+  --vector2: #FBBF24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+

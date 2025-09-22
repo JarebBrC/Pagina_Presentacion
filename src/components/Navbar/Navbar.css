@@ -1,0 +1,123 @@
+@import url('../../App.css');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--naranja);
+  padding: 1.6rem;
+  font-family: var(--font-primary);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.navbar__logo-img {
+  height: 45px;
+}
+
+/* Botón hamburguesa */
+.navbar__burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: var(--blanco);
+  border-radius: 4px;
+}
+
+/* Menú Mobile */
+.navbar__menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: var(--naranja);
+  list-style: none;
+  padding: 2rem 1rem;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.navbar__menu--open {
+  display: flex;
+}
+
+.navbar__diccionario{
+  display: none;
+}
+.navbar__menu li a {
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: var(--font-bold-20);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar__menu li a:hover {
+  color: var(--azulFondos);
+}
+
+/* Botón Diccionario */
+.navbar__diccionario a {
+  background-color: var(--buttonMorado);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.navbar__diccionario a:hover {
+  background-color: #734bd4;
+}
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  .navbar {
+    height: 90px;
+    padding: 0 3rem;
+    justify-content: left;
+  }
+
+  .navbar__burger {
+    display: none;
+  }
+
+  .navbar__menu {
+    position: static;
+    flex-direction: row;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .navbar__menu li a {
+    font-size: 1.6rem;
+  }
+
+  .navbar__diccionario{
+    display: flex;
+  }
+
+  .navbar__diccionario a {
+    margin-left: 2.5rem;
+  }
+}
